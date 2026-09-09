@@ -1,0 +1,303 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --fundo: #dce7ed;
+    --texto: #38434d;
+    --principal: #72b0b6;
+    --titulo: #3d5870;
+    --claro: #f5f3e8;
+    --verde: #e1ebe3;
+    --lilas: #ccd3f0;
+    --borda: #9aaebe;
+    --destaque: #f3c6d5;
+    --titulo-sobre: #647d95;
+    --titulo-personagens: #587461;
+    --texto-personagens: #39473e;
+    --borda-personagens: #91aa99;
+    --fundo-personagens: #e1ebe3;
+    --fundo-magia: #CCD3F0;
+    --titulo-magia: #46527D;
+    --borda-magia: #6B76A8;
+    --formulario: darkblue;
+    --formulario-hover: #315f86;
+    --fundo-formulario: #F5F5DC;
+    --imagem: #806b4f;
+    --rodape: #72b0b6;
+    --link: #f3c6d5;
+    --branco: white;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5%;
+    background: var(--fundo);
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+/* cabeçalho */
+header,
+footer {
+    text-align: center;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 2.8rem;
+    font-weight: normal;
+    color: var(--titulo);
+}
+
+nav,
+footer {
+    background: var(--principal);
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    color: var(--destaque);
+}
+
+/* botão "modo escuro" */
+#tema {
+    background-color: var(--principal);
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#tema:hover,
+.botao:hover {
+    background: var(--titulo);
+}
+
+/* seções */
+#sobre,
+#personagens,
+#magia {
+    padding: 30px;
+    margin-bottom: 20px;
+    border: 2px solid var(--borda);
+    text-align: justify;
+}
+
+/* sobre */
+#sobre {
+    background: var(--claro);
+}
+
+#sobre h3 {
+    color: var(--titulo-sobre);
+    padding-bottom: 10px;
+    font-size: 1.7rem;
+}
+
+#sobre p {
+    margin-bottom: 15px;
+}
+
+/* personagens */
+#personagens {
+    background-color: var(--fundo-personagens);
+    border: 2px solid var(--borda-personagens);
+    color: var(--texto-personagens);
+}
+
+#personagens h3 {
+    color: var(--titulo-personagens);
+    margin-top: 18px;
+    margin-bottom: 6px;
+    font-size: 1.3rem;
+}
+
+#personagens p {
+    margin-bottom: 14px;
+}
+
+#personagens h3:first-child {
+    margin-top: 0;
+    padding-bottom: 15px;
+    font-size: 1.7rem;
+}
+
+/* magia */
+#magia {
+    background-color: var(--fundo-magia);
+    border: 2px solid var(--borda-magia);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+#magia h3 {
+    color: var(--titulo-magia);
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+#magia p {
+    margin-bottom: 12px;
+}
+
+#magia h3:first-child {
+    padding-bottom: 15px;
+    font-size: 1.7rem;
+}
+
+/* lista */
+ul {
+    font-size: 1.1rem;
+    padding: 15px 30px;
+    margin-bottom: 20px;
+}
+
+li {
+    padding: 5px;
+}
+
+/* tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    border: 1px solid var(--borda);
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: var(--principal);
+    color: white;
+}
+
+td,
+.campo {
+    background: var(--claro);
+}
+
+/* formulário */
+form {
+    padding: 25px;
+}
+
+.campo {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid var(--formulario);
+    background-color: var(--fundo-formulario);
+}
+
+legend {
+    color: var(--formulario);
+    font-weight: bold;
+    padding: 5px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--formulario);
+}
+
+.botao {
+    background-color: var(--formulario);
+    color: var(--branco);
+    padding: 10px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* imagem */
+main img {
+    display: block;
+    max-width: 90%;
+    margin: 25px auto;
+    border: 5px solid var(--imagem);
+    border-radius: 5px;
+}
+
+/* rodapé */
+footer {
+    background-color: var(--principal);
+    color: var(--branco);
+    padding: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+#wiki {
+    color: var(--destaque);
+    padding: 8px 15px;
+    font-size: 16px;
+}
+
+/* tema modo escuro */
+.escuro {
+    --fundo: #15182f;
+    --texto: #d8d9e5;
+    /* cabeçalho, menu e rodapé */
+    --principal: #454b72;
+    --rodape: #454b72;
+    /* títulos */
+    --titulo: #a8b4dc;
+    --titulo-sobre: #9da9d0;
+    --titulo-personagens: #9dbba8;
+    --titulo-magia: #b0a8d2;
+    /* sobre */
+    --claro: #242740;
+    --borda: #555c7c;
+    /* personagens */
+    --fundo-personagens: #26382f;
+    --borda-personagens: #526b5d;
+    --texto-personagens: #d0ddd5;
+    /* magia */
+    --fundo-magia: #302b4a;
+    --borda-magia: #625a82;
+    /* formulário */
+    --formulario: #1d99d7;
+    --formulario-hover: #638596;
+    --fundo-formulario: #0e364e;
+    /* outros */
+    --imagem: #665745;
+    --destaque: #9bbfc5;
+    --link: #b8c5df;
+    --branco: #eeeeF5;
+}
